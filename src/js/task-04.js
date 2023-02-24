@@ -18,6 +18,7 @@ function onIncrementCounter() {
     counterValue += 1;
     refs.counterValueSpan.textContent = counterValue;
 
+    
     console.log(counterValue);
 }
 
