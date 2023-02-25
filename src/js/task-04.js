@@ -5,16 +5,16 @@ const refs = {
     counterValueSpan: document.querySelector('#value'),
 };
 
-refs.decrCounterBtn.addEventListener('click', onDecrementCounter);
-refs.incrCounterBtn.addEventListener('click', onIncrementCounter);
+refs.decrCounterBtn.addEventListener('click', handleDecrementCounter);
+refs.incrCounterBtn.addEventListener('click', handleIncrementCounter);
 
-function onDecrementCounter() {
+function handleDecrementCounter() {
     counterValue -= 1;
     refs.counterValueSpan.textContent = counterValue;
     console.log(counterValue);
 }
 
-function onIncrementCounter() {
+function handleIncrementCounter() {
     counterValue += 1;
     refs.counterValueSpan.textContent = counterValue;
 

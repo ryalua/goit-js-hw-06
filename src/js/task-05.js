@@ -3,10 +3,14 @@ const refs = {
     nameOutput: document.querySelector('#name-output'),
 }
 
-refs.nameInput.addEventListener('input', onInputName);
+refs.nameInput.addEventListener('input', handleNameInput);
 
-function onInputName(event) {
+function handleNameInput(event) {
     refs.nameOutput.textContent = event.currentTarget.value;
     // refs.nameOutput.trim();
-    console.log(event.currentTarget.value);
+    // console.log(event.currentTarget.value);
+    if (event.currentTarget.value.length === 0) {
+        refs.nameOutput.textContent = 'Anonymous';
+    }
+    // console.log(event.currentTarget.value.length);
 }
