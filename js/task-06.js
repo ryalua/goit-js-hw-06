@@ -10,10 +10,7 @@ refs.validationInput.addEventListener('blur', handleInputSymbols);
 
 function handleInputSymbols(event) {
     const inputLength = event.currentTarget.value;
-    // const inputLength = refs.validationInput.value;
-    // console.log(`inputLengthValue: ${inputLength}`)
-    // console.log(`inputLengthNumber: ${Number(inputLength)}`)
-
+    
     if (inputLength.length === Number(setLength)) {
         // console.log(inputLength.length === Number(setLength));
 
