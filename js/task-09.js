@@ -7,9 +7,9 @@ const refs = {
   changeColor: document.querySelector('.change-color'),
 };
 
-refs.changeColor.addEventListener('click', hendleButtonCkick);
+refs.changeColor.addEventListener('click', handleButtonCkick);
 
-function hendleButtonCkick() {
+function handleButtonCkick() {
   let color = getRandomHexColor();
   refs.backgroundEl.style.backgroundColor = color;
 

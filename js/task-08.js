@@ -4,16 +4,16 @@ const refs = {
     passsword: document.querySelector('[name="password"]'),
 };
 
-refs.form.addEventListener('submit', hendleFormSubmit);
+refs.form.addEventListener('submit', handleFormSubmit);
 
-function hendleFormSubmit(event) {
+function handleFormSubmit(event) {
     event.preventDefault();
     let emailText = event.currentTarget.email.value;
     let passwordText = event.currentTarget.password.value;
-    // console.log(emailText, passwordText);
+    
     
     if(!emailText || !passwordText) {
-    // if (emailText === "" || passwordText === "") {
+    
         return alert("All fields must be filled!");
     }
     console.log({ emailText, passwordText });

@@ -11,14 +11,12 @@ refs.incrCounterBtn.addEventListener('click', handleIncrementCounter);
 function handleDecrementCounter() {
     counterValue -= 1;
     refs.counterValueSpan.textContent = counterValue;
-    console.log(counterValue);
+    
 }
 
 function handleIncrementCounter() {
     counterValue += 1;
     refs.counterValueSpan.textContent = counterValue;
-
     
-    console.log(counterValue);
 }
 
