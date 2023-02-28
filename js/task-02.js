@@ -12,7 +12,9 @@ const ingredientsRef = ingredients.map(ingredient => {
   const liRef = document.createElement('li');
   liRef.textContent = ingredient;
   liRef.classList.add('item');
- 
+  // liRef.style.fontSize = '30px'
+
+  // console.log(liRef);
   return liRef;
   
 });

@@ -13,8 +13,8 @@ function handleFontSizeControl(event) {
     let targetSize = event.currentTarget.value;
     
 
-    
+    // console.log(`fontSizeInput: ${refs.fontSizeInput.value}`);
     
     refs.fontSizeText.style.fontSize = `${targetSize}px`;
-    
+    // console.log(`fontSizeText: ${targetSize}`);
 }
